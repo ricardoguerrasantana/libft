@@ -1,3 +1,6 @@
 *.out
 *.a
 *.o
+
+# VS code settings
+.vscode/
