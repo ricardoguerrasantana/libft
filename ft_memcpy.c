@@ -6,7 +6,7 @@
 /*   By: ricguerr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 18:33:41 by ricguerr          #+#    #+#             */
-/*   Updated: 2023/05/13 14:57:32 by ricguerr         ###   ########.fr       */
+/*   Updated: 2023/05/20 20:44:56 by ricguerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	d = dst;
 	s = src;
+	if (!d && !src)
+		return (NULL);
 	while (n--)
 		*d++ = *s++;
 	return (dst);
