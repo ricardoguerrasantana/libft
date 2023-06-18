@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ricguerr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ricguerr <ricguerr@student.42adel.org.au>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:55:02 by ricguerr          #+#    #+#             */
-/*   Updated: 2023/05/20 18:47:52 by ricguerr         ###   ########.fr       */
+/*   Updated: 2023/06/18 20:44:58 by ricguerr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <stdio.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 // Part 1 - Libc functions
 
